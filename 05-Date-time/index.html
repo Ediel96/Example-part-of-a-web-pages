@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../0-library/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="../0-library/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.css"></script>
+</head>
+<body>
+    <h1>Modal y Datepicker</h1>
+    <button class="btn btn-primary" id="botMod"> Mostral modal</button>
+
+    <div class="modal" id="modal-time" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div class="container mt-5 mt-5" style="width: 400px;">
+            <input type="text"  id="picker" class="form-control">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('#picker').daterangepicker({
+        singleDatePicker:true,
+        showDropdowns: true,
+        opens:'right',
+        drops: 'down',
+      });
+    </script>
+
+  <script src="../0-library/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="../0-library/Jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../0-library/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../0-library/popper/popper.min.js"></script>
+  <script type="text/javascript" src="js.js"> </script>
+</body>
+</html>

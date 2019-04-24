@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="../0-library/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
   <div id="sidebar">
@@ -14,10 +18,60 @@
     </div>
     <div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['user']"><i class="ion ion-ios-contact"></i> <span>Ingresar paciente</span></a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['search']"><i class="ion ion-ios-search"></i> <span class="">Buscar</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="ion ion-android-calendar"></i> <span class="">Recordatorio</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="ion ion-ios-cloud-download"></i> <span class="">Descargar pacientes</span></a>
+        </li>
       </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <nav id="navbar-example3" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">Item 1</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+        </nav>
+        <a class="nav-link" href="#item-2">Item 2</a>
+        <a class="nav-link" href="#item-3">Item 3</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+          <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+        </nav>
+      </nav>
+    </nav>
+    
+    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+      <h4 id="item-1">Item 1
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi, nisi non earum ipsam porro aut molestias quas magni modi quam assumenda consectetur aspernatur, harum, omnis odio veniam dolore temporibus.
+      </h4>
+      <p>...</p>
+      <h5 id="item-1-1">Item 1-1 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellat error esse numquam ab voluptas ratione veritatis sunt debitis blanditiis optio quaerat laborum est distinctio officia dolorum magnam, et totam?
+      </h5>
+      <p>...</p>
+      <h5 id="item-1-2">Item 1-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, beatae ullam quasi deserunt asperiores, culpa nobis ipsam ab voluptas neque voluptatum temporibus eius minima repellendus, pariatur illum! Culpa, dolor rem!</h5>
+      <p>...</p>
+      <h4 id="item-2">Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis deleniti quisquam minus ullam neque molestiae at, sit nihil sequi magnam aperiam sapiente laudantium sint dolore ad nisi porro! Similique.</h4>
+      <p>...</p>
+      <h4 id="item-3">Item 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi itaque facere ducimus enim reprehenderit nulla, possimus illo vitae quam accusantium nostrum. Neque molestias similique doloremque voluptas unde commodi, sint ex!</h4>
+      <p>...</p>
+      <h5 id="item-3-1">Item 3-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem ea sed illo recusandae ratione id? Eveniet fuga nostrum nulla nemo obcaecati, expedita non suscipit, totam corrupti aliquid, aperiam consectetur.
+      </h5>
+      <p>...</p>
+      <h5 id="item-3-2">Item 3-2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vitae tempora mollitia ea, omnis ducimus earum eius vel placeat obcaecati quo sequi blanditiis commodi accusantium quaerat, explicabo quidem! Inventore, amet!</h5>
+      <p>...</p>
     </div>
   </div>
 </body>
