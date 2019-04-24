@@ -1,0 +1,11 @@
+*{
+    margin: 10px;
+}
+
+form div p input{
+    font-family: Verdana;
+} 
+
+table  tr th {
+    margin-top: 0px;
+}
