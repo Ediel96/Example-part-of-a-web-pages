@@ -12,7 +12,13 @@
   background: #151719;
 }
 
-#sidebar ul li {
+a span{
+  color: aliceblue;
+  margin: 10px;
+  text-decoration: none;
+}
+
+#sidebar ul li  {
   margin: 5px;
   color:rgba(230, 230, 230, 0.9);
   list-style: none;
@@ -24,9 +30,19 @@
   font-size: 25px;
 }
 
+.form-tb{
+  width: 900px;
+}
+
 .content{
   position: absolute;
    left: 272px;
    top: 0px;
 }
 
+div li a img{
+  width: 75px;
+  height: 75px;
+  margin-left: 80px;
+  margin-right: auto;
+}
