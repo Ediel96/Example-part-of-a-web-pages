@@ -41,8 +41,9 @@ a span{
 }
 
 div li a img{
-  width: 75px;
-  height: 75px;
-  margin-left: 80px;
+  width: 85px;
+  height: 85px;
+  margin-left: 75px;
   margin-right: auto;
+  border-radius: 100%;
 }
