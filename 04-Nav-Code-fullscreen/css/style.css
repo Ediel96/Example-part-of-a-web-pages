@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.wrap{
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.main{
+    height: 950px;
+    background: #00c9ff;
+    background: -webkit-linear-gradient(to right, #257bdf, #00c9ff);
+    background: linear-gradient(to right, #257bdf, #00c9ff)
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: pointer;
+}
+header .btn-menu{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.seccion1,
+.seccion1 .wrap {
+    height: 100%;
+}
+
+.seccion1 .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.caption-main h1{
+    font-size: 95px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.caption-main .btn-menu{
+    display: block;
+    margin: 50px auto 0px;
+
+    width: 350px;
+    padding: 20px 0px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FULL MENU */
+.full-menu{
+    position: fixed;
+    top:0;
+    left: -100;
+
+    width: 100%;
+    height: 100vh;
+    background: #292929;
+
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: 0.2s;
+}
+
+.full-menu .wrap{
+    display:flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-menu .wrap .navegacion{
+    flex-basis: 0;
+    flex-grow: 1;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.full-menu .navegacion ul{
+    list-style: none;
+}
+
+.full-menu .navegacion .social-items a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    margin: 50px 20px 0px 0px;
+}
+
+.full-menu .navegacion ul li a{
+    font-family: 'Century Gothic';
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+}
+
+.full-menu .wrap .menu-text{
+    flex-basis: 0;
+    flex-grow: 1;
+
+    font-size: 15px;
+    color: #9a9a9a;
+    font-weight: 600;
+    text-align: right;
+}
+
+.full-menu .navegacion ul li a:hover,
+.full-menu .navegacion .social-items a:hover{
+    color: #1EE0F1;
+}
